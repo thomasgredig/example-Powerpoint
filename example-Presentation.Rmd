@@ -5,7 +5,8 @@ date: '2019-11-28'
 output:
   powerpoint_presentation:
     reference_doc: ppt-template.pptx
-  beamer_presentation: default
+  slidy_presentation:
+    footer: "Copyright (c) 2019, Thomas Gredig"
 ---
 
 ```{r setup, include=FALSE}
@@ -59,11 +60,7 @@ $$
 ## Slide with Text
 
 ```{r}
-q = 'A string variable'
-q1 = 33
-q
-q1
-d = data.frame(s = q, q = 31)
+d = data.frame(s = "string", q = 31)
 kable(d)
 ```
 
@@ -74,4 +71,4 @@ Notes can be added with 3 double colons. The notes do not appearon the Powerpoin
 ::: notes
 Some notes, which will appear at the bottom
 :::
-rmarkdown::pandoc_version()
+
