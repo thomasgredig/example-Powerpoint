@@ -10,6 +10,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
 ```
 
 ## R Markdown
@@ -26,7 +27,8 @@ Example Presentation explaing on how to use:
 
 
 ## Slide with Images
-
+```{r fig.width=4}
+```
 ![RAW data is coverted into graphs and tables using a Model. The figures and tables are then integrated into the Presentation.](images/RAW-Model-Output.png)
 
 ## Slide with 2 Images
@@ -54,6 +56,16 @@ $$
 $$
 
 
+## Slide with Text
+
+```{r}
+q = 'A string variable'
+q1 = 33
+q
+q1
+d = data.frame(s = q, q = 31)
+kable(d)
+```
 
 ## Notes for Slides
 
@@ -62,4 +74,4 @@ Notes can be added with 3 double colons. The notes do not appearon the Powerpoin
 ::: notes
 Some notes, which will appear at the bottom
 :::
-
+rmarkdown::pandoc_version()
