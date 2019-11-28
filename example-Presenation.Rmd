@@ -1,0 +1,36 @@
+---
+title: "example-Presentation"
+author: "Thomas Gredig"
+date: "11/28/2019"
+output: 
+  powerpoint_presentation:
+    reference_doc: ppt-template.pptx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+Example Presentation explaing on how to use:
+
+- Image and Caption
+- 2 Images on one Slide
+- use of template
+
+
+## Slide with Images
+
+![RAW data is coverted into graphs and tables using a Model. The figures and tables are then integrated into the Presentation.](images/RAW-Model-Output.png)
+
+## Slide with 2 Images
+
+:::::::::::::: {.columns}
+::: {.column}
+![RAW data is coverted into graphs and tables using a Model. The figures and tables are then integrated into the Presentation.](images/RAW-Model-Output.png)
+:::
+::: {.column}
+![RAW data is coverted into graphs and tables using a Model. The figures and tables are then integrated into the Presentation.](images/RAW-Model-Output.png)
+:::
+::::::::::::::
