@@ -3,10 +3,11 @@ title: "example-Presentation"
 author: "Thomas Gredig"
 date: '2019-11-28'
 output:
+  slidy_presentation:
+    footer: Copyright (c) 2019, Thomas Gredig
   powerpoint_presentation:
     reference_doc: ppt-template.pptx
-  slidy_presentation:
-    footer: "Copyright (c) 2019, Thomas Gredig"
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -23,8 +24,7 @@ Example Presentation explaing on how to use:
 - use of template
 - LaTeX equations
 - Comments or Notes
-
-
+- Custom title and custom text
 
 
 ## Slide with Images
@@ -71,4 +71,17 @@ Notes can be added with 3 double colons. The notes do not appearon the Powerpoin
 ::: notes
 Some notes, which will appear at the bottom
 :::
+
+## Custom Title and Notes
+
+Using the `paste()` function, it is possible to output custom title and text:
+
+```{R, echo=TRUE}
+paste('##',' Custom Title','\n',
+      'Custom text with list','\n',
+      '- first item', '\n',
+      '- second item')
+```
+
+`r paste('##',' Custom Title','\n','Custom text with list:','\n\n','- first item', '\n','- second item')`
 
