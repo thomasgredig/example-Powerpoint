@@ -1,8 +1,9 @@
 ---
 title: "example-Presentation"
 author: "Thomas Gredig"
-date: "11/28/2019"
-output: 
+date: '2019-11-28'
+output:
+  beamer_presentation: default
   powerpoint_presentation:
     reference_doc: ppt-template.pptx
 ---
@@ -15,9 +16,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Example Presentation explaing on how to use:
 
-- Image and Caption
-- 2 Images on one Slide
+- Image and caption
+- Two images on one slide
 - use of template
+- LaTeX equations
 
 
 ## Slide with Images
@@ -34,3 +36,19 @@ Example Presentation explaing on how to use:
 ![RAW data is coverted into graphs and tables using a Model. The figures and tables are then integrated into the Presentation.](images/RAW-Model-Output.png)
 :::
 ::::::::::::::
+
+
+## Slide with Equation
+
+
+The Cauchy-Schwarz Inequality:  
+
+$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 
+\leq 
+\left( \sum_{k=1}^n a_k^2 \right) 
+\left( \sum_{k=1}^n b_k^2 \right) 
+$$
+
+
+## Last Slide
