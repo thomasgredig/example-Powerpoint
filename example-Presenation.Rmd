@@ -3,9 +3,9 @@ title: "example-Presentation"
 author: "Thomas Gredig"
 date: '2019-11-28'
 output:
-  beamer_presentation: default
   powerpoint_presentation:
     reference_doc: ppt-template.pptx
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -20,6 +20,9 @@ Example Presentation explaing on how to use:
 - Two images on one slide
 - use of template
 - LaTeX equations
+- Comments or Notes
+
+
 
 
 ## Slide with Images
@@ -51,4 +54,12 @@ $$
 $$
 
 
-## Last Slide
+
+## Notes for Slides
+
+Notes can be added with 3 double colons. The notes do not appearon the Powerpoint, but in the section below.
+
+::: notes
+Some notes, which will appear at the bottom
+:::
+
